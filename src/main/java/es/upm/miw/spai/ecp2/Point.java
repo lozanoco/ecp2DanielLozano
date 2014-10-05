@@ -29,6 +29,7 @@ public class Point {
     public int getY() {
         return this.y;
     }
+     
 
     public double module() {
         return Math.sqrt(this.x * this.x + this.y * this.y);
@@ -49,7 +50,7 @@ public class Point {
     }
 
     public int getZ() {
-		return 4;
+		return this.z;
 	}
     
 }
