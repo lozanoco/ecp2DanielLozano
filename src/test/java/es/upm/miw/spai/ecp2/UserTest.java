@@ -12,6 +12,11 @@ public class UserTest {
     public void before() {
         usr = new User(2,"Juan","Perez");
     }
+    
+    @Test
+    public void testGetName() {
+        assertEquals("JUAN", usr.getName());
+    }
 
     @Test
     public void testConstructorIntStringString() {

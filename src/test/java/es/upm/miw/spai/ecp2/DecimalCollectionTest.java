@@ -29,4 +29,9 @@ public class DecimalCollectionTest {
     public void testSum() { 
         assertEquals(6, collection.sum(), 0.1);
     } 
+    
+    @Test 
+    public void testMean() { 
+        assertEquals(3, collection.mean(), 0.1);
+    } 
 }
