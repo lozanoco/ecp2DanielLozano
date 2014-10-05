@@ -74,4 +74,14 @@ public class Fraction {
     	return (double) numerador / denominador;  
     }
     
+    public boolean isEquivalente (Fraction fr1, Fraction fr2){
+    	if((fr1.getNumerator() * fr2.getDenominator()) ==  (fr1.getDenominator() * fr2.getNumerator())){
+    		return true;
+    	} else {
+    		return false;
+    	}
+    				
+    	 
+    }
+    
 }
