@@ -1,11 +1,17 @@
 package es.upm.miw.spai.ecp2;
 
 public class Point {
-    private int x, y;
+    private int x, y, z;
 
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+    
+    public Point(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 
     public Point(int xy) {
