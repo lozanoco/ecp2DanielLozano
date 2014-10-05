@@ -68,6 +68,10 @@ public class Fraction {
         return this.numerator < this.denominator;
     }
     
-    
+    public double suma (Fraction fr1, Fraction fr2){
+    	int numerador = (fr1.getNumerator()*fr2.getDenominator() + fr1.getDenominator()*fr2.getNumerator());
+    	int denominador = fr1.getDenominator()*fr2.getDenominator();    			
+    	return (double) numerador / denominador;  
+    }
     
 }
