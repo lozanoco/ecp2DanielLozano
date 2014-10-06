@@ -29,10 +29,13 @@ public class Point {
     public int getY() {
         return this.y;
     }
+    
+    public int getZ() {
+		return this.z;
+	}
      
-
     public double module() {
-        return Math.sqrt(this.x * this.x + this.y * this.y);
+        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
     }
 
     public double phase() {
@@ -42,15 +45,13 @@ public class Point {
     public void translateOrigin(Point origin) {
         this.x -= origin.getX();
         this.y -= origin.getY();
+        this.z -= origin.getZ();
     }
 
     @Override
     public String toString() {
-        return "Point[" + x + "," + y + "]";
+        return "Point[" + x + "," + y + "," + z +"]";
     }
-
-    public int getZ() {
-		return this.z;
-	}
+ 
     
 }
