@@ -21,7 +21,7 @@ public class UserTest {
     @Test
     public void testConstructorIntStringString() {
         assertEquals(2, usr.getNumber());
-        assertEquals("Juan", usr.getName());
+        assertEquals("JUAN", usr.getName());
         assertEquals("Perez", usr.getFamilyName());
     }
 
